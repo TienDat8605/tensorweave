@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TensorWeave | Support</title>
+    <style>
+      :root {
+        --bg: #f7fafc;
+        --surface: #ffffff;
+        --text: #1a1a1a;
+        --muted: #4a5568;
+        --accent: #667eea;
+        --border: #e2e8f0;
+        --shadow: 0 10px 30px rgba(26, 26, 26, 0.08);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f172a;
+          --surface: #111b31;
+          --text: #e5e7eb;
+          --muted: #a7b0c0;
+          --accent: #7a8ef0;
+          --border: #25304a;
+          --shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(
+          180deg,
+          var(--bg),
+          color-mix(in srgb, var(--bg) 88%, #dbeafe 12%)
+        );
+        color: var(--text);
+        line-height: 1.65;
+      }
+
+      .container {
+        width: min(950px, 92vw);
+        margin: 0 auto;
+        padding: 3rem 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1.4rem;
+        box-shadow: var(--shadow);
+      }
+
+      h1 {
+        margin: 0 0 0.5rem;
+        font-size: clamp(1.8rem, 4vw, 2.3rem);
+      }
+
+      h2 {
+        margin: 0 0 0.5rem;
+        font-size: 1.1rem;
+      }
+
+      p,
+      li {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      ul {
+        margin: 0.6rem 0 0;
+        padding-left: 1.2rem;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 1.5rem;
+        color: var(--muted);
+        text-align: center;
+      }
+
+      @media (max-width: 780px) {
+        .grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <article class="card" style="margin-bottom: 1rem">
+        <h1>Support</h1>
+        <p>
+          Need help using TensorWeave? Reach out and we will help you get
+          unstuck quickly.
+        </p>
+        <p style="margin-top: 0.7rem">
+          Email:
+          <a href="mailto:support@tensorweave.io">support@tensorweave.io</a>
+        </p>
+        <p>
+          GitHub Issues:
+          <a
+            href="https://github.com/tensorweave/tensorweave/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Open an issue</a
+          >
+        </p>
+        <p style="margin-top: 0.8rem">
+          <a href="./index.html">Back to home</a>
+        </p>
+      </article>
+
+      <section class="grid" aria-label="FAQ">
+        <article class="card">
+          <h2>FAQ: How do I analyze a specific paper?</h2>
+          <p>
+            Ask TensorWeave with the arXiv ID, for example: "Analyze arxiv
+            2303.08774".
+          </p>
+        </article>
+        <article class="card">
+          <h2>FAQ: Can I use TensorWeave for non-ML topics?</h2>
+          <p>
+            Yes, but it is optimized for machine learning and AI research
+            literature.
+          </p>
+        </article>
+        <article class="card">
+          <h2>FAQ: Are outputs always correct?</h2>
+          <p>
+            Use outputs as research support and verify key claims with original
+            sources.
+          </p>
+        </article>
+        <article class="card">
+          <h2>FAQ: Does TensorWeave store my prompts?</h2>
+          <p>
+            No. TensorWeave is designed around privacy-first usage and does not
+            store user data.
+          </p>
+        </article>
+      </section>
+
+      <footer>
+        <p>Built for researchers, by researchers</p>
+        <p>Copyright 2024 TensorWeave</p>
+      </footer>
+    </main>
+  </body>
+</html>

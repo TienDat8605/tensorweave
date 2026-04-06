@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TensorWeave | Terms of Service</title>
+    <style>
+      :root {
+        --bg: #f7fafc;
+        --surface: #ffffff;
+        --text: #1a1a1a;
+        --muted: #4a5568;
+        --accent: #667eea;
+        --border: #e2e8f0;
+        --shadow: 0 10px 30px rgba(26, 26, 26, 0.08);
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #0f172a;
+          --surface: #111b31;
+          --text: #e5e7eb;
+          --muted: #a7b0c0;
+          --accent: #7a8ef0;
+          --border: #25304a;
+          --shadow: 0 14px 34px rgba(0, 0, 0, 0.35);
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: linear-gradient(
+          180deg,
+          var(--bg),
+          color-mix(in srgb, var(--bg) 88%, #dbeafe 12%)
+        );
+        color: var(--text);
+        line-height: 1.65;
+      }
+
+      .container {
+        width: min(900px, 92vw);
+        margin: 0 auto;
+        padding: 3rem 0;
+      }
+
+      .card {
+        background: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 1.5rem;
+        box-shadow: var(--shadow);
+      }
+
+      h1 {
+        margin: 0 0 0.6rem;
+        font-size: clamp(1.8rem, 4vw, 2.3rem);
+      }
+
+      h2 {
+        margin: 1.2rem 0 0.4rem;
+        font-size: 1.1rem;
+      }
+
+      p {
+        margin: 0;
+        color: var(--muted);
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      footer {
+        margin-top: 1.5rem;
+        color: var(--muted);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <article class="card">
+        <h1>Terms of Service</h1>
+
+        <h2>Service Description</h2>
+        <p>
+          TensorWeave provides an AI-powered research assistant experience for
+          understanding and exploring machine learning papers and concepts.
+        </p>
+
+        <h2>Use Restrictions</h2>
+        <p>
+          You agree to use TensorWeave only for lawful research and educational
+          purposes and not for abusive, deceptive, or illegal activities.
+        </p>
+
+        <h2>AI Content Disclaimer</h2>
+        <p>
+          Responses may include AI-generated content that can be incomplete or
+          inaccurate. You are responsible for verifying outputs before relying
+          on them in research or publication.
+        </p>
+
+        <h2>Limitation of Liability</h2>
+        <p>
+          TensorWeave is provided on an "as is" basis without warranties. To the
+          maximum extent permitted by law, TensorWeave is not liable for any
+          indirect or consequential damages arising from use of the service.
+        </p>
+
+        <p style="margin-top: 1rem"><a href="./index.html">Back to home</a></p>
+      </article>
+      <footer>
+        <p>Copyright 2024 TensorWeave</p>
+      </footer>
+    </main>
+  </body>
+</html>
